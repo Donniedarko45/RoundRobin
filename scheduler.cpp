@@ -149,9 +149,9 @@ void RoundRobinScheduler::printMetrics() {
   float avg_turnaround_time = 0;
 
   cout << "\nPerformance Metrics" << std::endl;
-  cout << std::left << std::setw(5) << "ID" << std::setw(15) << "Name"
-       << std::setw(15) << "Burst Time" << std::setw(15) << "Waiting Time"
-       << std::setw(20) << "Turnaround Time" << std::endl;
+  cout << left << std::setw(5) << "ID" << std::setw(15) << "Name" << setw(15)
+       << "Burst Time" << std::setw(15) << "Waiting Time" << setw(20)
+       << "Turnaround Time" << std::endl;
 
   for (const auto &task : completed_history) {
     cout << std::left << std::setw(5) << task.id << std::setw(15) << task.name

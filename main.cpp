@@ -1,10 +1,6 @@
 #include "scheduler.h"
 
 using namespace std;
-
-// To compile: g++ main.cpp scheduler.cpp -o scheduler
-// To run: ./scheduler
-
 /**
  * @brief The main entry point of the program.
  *
@@ -33,3 +29,6 @@ int main() {
 
   return 0;
 }
+
+// To compile: g++ main.cpp scheduler.cpp -o scheduler
+// To run: ./scheduler
