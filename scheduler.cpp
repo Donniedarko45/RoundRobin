@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 /**
- * @brief Construct a new Round Robin Scheduler:: Round Robin Scheduler object
+ *  Construct a new Round Robin Scheduler:: Round Robin Scheduler object
  *
  * @param quantum The time quantum for the scheduler.
  */
@@ -13,7 +13,7 @@ RoundRobinScheduler::RoundRobinScheduler(int quantum)
       task_counter(0) {}
 
 /**
- * @brief Destroy the Round Robin Scheduler:: Round Robin Scheduler object
+ * Destroy the Round Robin Scheduler:: Round Robin Scheduler object
  *
  * This destructor is responsible for cleaning up any remaining tasks in the
  * scheduler. It iterates through the circular linked list and deletes each
@@ -32,7 +32,7 @@ RoundRobinScheduler::~RoundRobinScheduler() {
 }
 
 /**
- * @brief Adds a new task to the scheduler's circular queue.
+ *  Adds a new task to the scheduler's circular queue.
  *
  * @param name The name of the task.
  * @param time The burst time of the task.
@@ -51,7 +51,7 @@ void RoundRobinScheduler::addTask(std::string name, int time) {
 }
 
 /**
- * @brief Starts the scheduling simulation and runs until all tasks are
+ * Starts the scheduling simulation and runs until all tasks are
  * completed.
  *
  * This is the core of the scheduler. It iterates through the tasks and
